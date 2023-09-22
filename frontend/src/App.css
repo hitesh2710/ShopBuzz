@@ -1,0 +1,25 @@
+*{
+margin: 0;
+/* On clicking scroll page smoothly moves to desired position not immediately */
+scroll-behavior: smooth; 
+}
+
+/* To remove the arrow which comes in the input tag for increment and decremnet */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.redColor{
+    color: red !important;
+}
+.greenColor{
+    color: green !important;
+}

@@ -1,0 +1,62 @@
+.contactPage{
+    position: fixed;
+    top: 0;
+    left:0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+   
+}
+.contactPage>div{
+    height: 20vh;
+    box-sizing: border-box;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(226, 160, 160);
+    margin: 0;
+    border-radius:2%;
+    transition: all 0.5s;
+}
+.contactPage>div>a{
+   text-decoration: none;
+}
+.contactPage> div > h1 {
+    color: rgba(0, 0, 0, 0.733);
+    font: 300 2rem "Roboto";
+    text-align: center;
+    width: 50%;
+    padding: 1.5rem;
+    margin: auto;
+  }
+.contactPage>div:hover{
+transform: scale(1.5);
+cursor: pointer;
+}
+
+@media screen and (max-width:1000px) {
+    .contactPage>div{
+        height: 20vh;
+        box-sizing: border-box;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        border-radius:2%;
+        transition: all 0.5s;
+
+    }
+    .contactPage>div:hover{
+        transform: scale(1.2);
+        }
+    
+}
+
+
+
