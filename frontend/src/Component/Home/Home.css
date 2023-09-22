@@ -91,15 +91,15 @@
   width: 14vmax;
   /* height: 9vh; */
 }
-.productCard > div{
+/* .productCard > div{
    
   position:absolute;
   left: 0%;
   bottom: 0%;
 
    
-}
-.productCard > div > div {
+} */
+.productCard > div  {
  
   margin: 0.3vmax;
   display: flex;

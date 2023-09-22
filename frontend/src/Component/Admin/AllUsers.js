@@ -118,7 +118,7 @@ function AllUsers() {
 
   const rows = [];
 
-  users &&
+  users!==undefined &&
     users.forEach((item) => {
       rows.push({
         id: item._id,
@@ -137,6 +137,7 @@ function AllUsers() {
           <DataGrid
             rows={rows}
             columns={columns}
+            pageSize={10}
             disableSelectionOnClick
             className="productListTable"
             autoHeight

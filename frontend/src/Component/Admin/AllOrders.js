@@ -112,7 +112,7 @@ function AllOrders() {
     
       const rows = [];
     
-      orders &&
+      orders!==undefined &&
         orders.forEach((item) => {
           rows.push({
           id: item._id,
@@ -131,13 +131,13 @@ function AllOrders() {
                 <DataGrid
                 rows={rows}
                 columns={columns}
-                
+                pageSize={10}
                 disableSelectionOnClick
                 className="productListTable"
                 autoHeight
-                >
+               />
 
-                </DataGrid>
+                
             </div>
         </div>
     </Fragment>

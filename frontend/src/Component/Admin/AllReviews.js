@@ -120,7 +120,7 @@ const AllReviews = () => {
 
   const rows = [];
 
-  reviews &&
+  reviews!==undefined &&
     reviews.forEach((item) => {
       rows.push({
         id: item._id,
