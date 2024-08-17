@@ -11,7 +11,10 @@ function ProductCard({product}) {
   return (
     <Link className="productCard" to={`/product/${product._id}`}>
         
-        <img src={product.images[0].url} alt={product.name}></img>
+        <div style={{height:'18vmax' , width: '14vmax', display:'flex',justifyContent:'center'}}>
+        <img src={product.images[0].url} alt={product.name} style={{height:'12vmax',width: '12vmax'}}></img>
+
+        </div>
       
         <p>{product.name}</p>
         <div>
